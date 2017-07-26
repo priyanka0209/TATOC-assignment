@@ -1,0 +1,28 @@
+#BASIC
+
+#ElementName: LocatorType: LocatorValue
+
+greenBox: x_path: //div[@class='greenbox']
+Box1: x_path: .//div[text()='Box 1']
+Box2: x_path: .//div[text()='Box 2']
+repaintBox_Btn: x_path: //a[text()='Repaint Box 2']
+proceed: x_path: //a[text()='Proceed']
+dragMe: x_path: //div[@class='ui-draggable']
+dropbox: x_path: //div[text()='DROPBOX']
+launchPopupWindow: x_path: //a[text()='Launch Popup Window']
+enterName: x_path: //input[@id='name']
+submit: x_path: //input[@id='submit']
+generateToken: x_path: //a[text()='Generate Token']
+token: x_path: //span[@id='token']
+
+
+#Advanced
+
+#ElementName: LocatorType: LocatorValue
+
+menu2: x_path: //div[@class='menutop m2']
+goNext: x_path: //span[text()='Go Next']
+symbol: x_path: //div[@id='symboldisplay']
+name: x_path: //input[@id='name']
+passkey: x_path: //input[@id='passkey']
+proceedAdvanced: x_path: //input[@id='submit']
