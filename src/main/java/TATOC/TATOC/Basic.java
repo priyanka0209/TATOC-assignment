@@ -18,17 +18,15 @@ public class Basic {
 	static String box1Class;
 	static String box2Class;
 
-	public static WebDriver setDriver(){
+	public static void setDriver(){
 	String chromeDriverPath = "C:/Users/priyanka.sharma/Downloads/chromedriver_win32 (1)/chromedriver.exe";
 	System.setProperty("webdriver.chrome.driver",chromeDriverPath);
 	WebDriver driver=new ChromeDriver();
-	return driver;
-	
 	}
 	
 	public static void main(String args[]) throws Exception{
 		
-		 driver=Basic.setDriver();
+		Basic.setDriver();
 		obj=new GetLocators(driver,pagename);
 		driver.get("http://10.0.1.86/tatoc/basic");
 		obj.element("greenBox").click();
