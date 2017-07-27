@@ -22,12 +22,10 @@ public class Advanced {
 	static String cr_name="";
 	static String cr_passkey="";
 	
-	public static WebDriver setDriver(){
+	public static void setDriver(){
 		String chromeDriverPath = "C:/Users/priyanka.sharma/Downloads/chromedriver_win32 (1)/chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver",chromeDriverPath);
-		WebDriver driver=new ChromeDriver();
-		return driver;
-		
+		 driver=new ChromeDriver();
 		}
 	
 	public static  void executeQuery() throws  Exception{
@@ -101,7 +99,7 @@ public class Advanced {
 	
 	public static void main(String args[]) throws Exception{
 		
-		 driver=Advanced.setDriver();
+		Advanced.setDriver();
 		obj=new GetLocators(driver,pagename);
 		driver.get("http://10.0.1.86/tatoc/advanced");
 		
